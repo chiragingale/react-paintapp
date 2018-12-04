@@ -63,7 +63,7 @@ class Canvas extends Component {
             userId: this.userId,
         };
         // We use the native fetch API to make requests to the server
-        const req = await fetch('http://localhost:4000/paint', {
+        const req = await fetch('https://paintappbe.herokuapp.com/paint', {
             method: 'post',
             body: JSON.stringify(body),
             headers: {
